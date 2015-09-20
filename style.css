@@ -1,0 +1,146 @@
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+html {
+	font-family: 'Poiret One', 'Raleway', sans-serif;
+	color: #ffffff;
+}
+
+body {
+	background-image: url("./background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+h1 {
+	text-align: center;
+	display: block;
+	position: fixed;
+	margin: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	font-weight: normal;
+	background-color: #171717;
+	font-size: 2.5em;
+	z-index: 1;
+}
+
+h2 {
+	text-align: center;
+	display: block;
+	margin: 25px 0 25px 0;
+	font-weight: normal;
+	font-size: 2em;
+	color: #ffffff;
+	background-color: rgba(23, 23, 23, .5);
+	border-width: 1px;
+	border-radius: 10px;
+	padding : 10px 20px 10px 20px;
+	margin: 25px 25% 25px 25%;
+}
+
+#header {
+	margin-bottom: 5em;
+}
+
+#content {
+	font-family: 'Raleway', sans-serif;
+	margin-top: 9em;
+}
+
+.section {
+	text-align: left;
+	text-indent: 3%;
+	background-color: rgba(23, 23, 23, .5);
+	display: block;
+	color: #ffffff;
+	border: solid;
+	border-color: rgba(23, 23, 23, 0);
+	border-width: 1px;
+	border-radius: 10px;
+	margin: 25px 25% 25px 25%;
+	padding : 10px 20px 10px 20px;
+}
+
+p {
+	text-indent: 1.5em;
+	line-height: 1.2em;
+	opacity: 1;
+}
+
+h3 {
+	color: #ffffff;
+	font-weight: normal;
+	font-size: 1.5em;
+	text-indent: 0;
+	opacity: 1;
+}
+
+table {
+	margin: 1em;
+	border: solid;
+	border-width: 1px;
+	border-collapse: collapse;
+	opacity: 1;
+}
+
+table th,td {
+	border: solid;
+	border-width: 1px;
+	padding: .5em;
+}
+
+table th {
+	background-color: #171717;
+	color: #ffffff;
+	border-color: #171717;
+}
+
+table td {
+	color: #171717;
+}
+
+dl {
+	opacity: 1;
+}
+
+dd {
+	margin-right: 2em;
+	margin-bottom: .2em;
+	opacity: 1;
+	text-indent: 0;
+}
+
+dt {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+dd::before {
+	content: '- ';
+}
+
+a {
+	color: #AA5500;
+	transition: 0.125s;
+	opacity: 1;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #AA5500;
+}
+
+a:hover {
+	color: #CC7700;
+}
+
+a:active {
+	color: #FFAA00;
+}
