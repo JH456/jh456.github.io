@@ -127,20 +127,20 @@ dd::before {
 }
 
 a {
-	color: #AA5500;
+	color: #AA00AA;
 	transition: 0.125s;
 	opacity: 1;
 	text-decoration: none;
 }
 
 a:visited {
-	color: #AA5500;
+	color: #AA00AA;
 }
 
 a:hover {
-	color: #CC7700;
+	color: #CC00CC;
 }
 
 a:active {
-	color: #FFAA00;
+	color: #FF00FF;
 }
