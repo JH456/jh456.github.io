@@ -133,7 +133,7 @@ dd::before {
 
 a {
 	color: #AA4400;
-	transition: 0.125s;
+	transition: 0.250s;
 	opacity: 1;
 	text-decoration: none;
 }
