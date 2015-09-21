@@ -15,6 +15,11 @@ body {
 	background-size: cover;
 }
 
+img {
+	width: 276px;
+	height: 257px;
+}
+
 h1 {
 	text-align: center;
 	display: block;
@@ -127,20 +132,20 @@ dd::before {
 }
 
 a {
-	color: #AA00AA;
+	color: #AA4400;
 	transition: 0.125s;
 	opacity: 1;
 	text-decoration: none;
 }
 
 a:visited {
-	color: #AA00AA;
+	color: #AA4400;
 }
 
 a:hover {
-	color: #CC00CC;
+	color: #CC7700;
 }
 
 a:active {
-	color: #FF00FF;
+	color: #FFAA00;
 }
