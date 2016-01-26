@@ -1,0 +1,139 @@
+body {
+  background-image: url("./cabling.jpg");
+  background-attachment: fixed;
+  background-position: 0% -300px;
+  font-family: Raleway;
+}
+
+.jh456 {
+  height: 180px;
+  width: 180px;
+}
+
+#banner {
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 400px;
+  position: absolute;
+  text-align: center;
+  margin: 0;
+  color: #FFFFFF;
+  padding: 20px;
+  font-family: "ubuntu mono";
+}
+
+#banner h1 {
+  font-size: 5em;
+}
+
+#banner p {
+  margin-top: 0px;
+  padding-top: 0px;
+  font-size: 3em;
+  text-shadow: 2px 2px #000000;
+}
+
+.section {
+  position: relative;
+  background-color: #191923;
+  width: auto;
+  margin: 0 0 150px 0;
+  padding: 1px 5% 40px 100px;
+  box-shadow: 20px 20px 30px 10px #02020B;
+}
+
+#content {
+  position: absolute;
+  top: 440px;
+  height: auto;
+  color: #DDDDFF;
+  left: 0px;
+  background-opacity: 0;
+  right: 0px;
+}
+
+#content h1 {
+  text-align: left;
+  margin: 25px 0px 25px 0px;
+  padding: 0px;
+  font-weight: normal;
+  text-decoration: none;
+  clear: both;
+  color: #AA2200;
+}
+
+#content h2 {
+  text-align: left;
+  margin-left: 0px;
+  padding: 0px;
+  font-weight: normal;
+  text-decoration: none;
+  clear: both;
+  color: #AA2200;
+}
+
+#content p {
+  text-indent: 2em;
+  line-height: 1.5em;
+}
+
+#content .left {
+  margin-right: 400px;
+  display: inline-block;
+  float: left;
+  clear: right;
+  margin: 0 25px 0 0;
+}
+
+#content .right {
+  display: table-cell;
+  display: inline-block;
+  float: right;
+  clear: left;
+  margin: 0 0 0 25px;
+}
+
+#content img {
+  width: 180px;
+}
+
+.fa-6 {
+  font-size: 10em;
+  margin-bottom: 50px;
+  color: #FFAAAA;
+}
+
+.circular {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  background: url(./websitePic.jpg) no-repeat;
+  background-size: 100%;
+  background-position: 0% 40%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+a {
+  color: #AA2200;
+  transition: 0.250s;
+  opacity: 1;
+  text-decoration: none;
+  font-size: .9em;
+}
+
+a:visited {
+  color: #992200;
+}
+
+a:hover {
+  color: #BB0000;
+}
+
+a:active {
+  color: #FF0000;
+}
