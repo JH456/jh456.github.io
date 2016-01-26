@@ -103,6 +103,22 @@ body {
   color: #FFAAAA;
 }
 
+a .fa-6 {
+  transition: 0.450s;
+}
+
+a:hover .fa-6 {
+  color: #FF5555;
+  text-color: #BB0000;
+  text-shadow: 0px 0px 10px #BB0000;
+}
+
+a:active .fa-6 {
+  color: #FF0000;
+  text-color: #FF0000;
+  text-shadow: 0px 0px 10px #FF0000;
+}
+
 .circular {
   width: 200px;
   height: 200px;
@@ -131,10 +147,12 @@ a:visited {
 
 a:hover {
   color: #BB0000;
+  text-color: #BB0000;
   text-shadow: 0px 0px 5px #BB0000;
 }
 
 a:active {
   color: #FF0000;
+  text-color: #FF0000;
   text-shadow: 0px 0px 5px #FF0000;
 }
