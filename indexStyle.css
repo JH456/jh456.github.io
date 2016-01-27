@@ -31,7 +31,7 @@ body {
   margin-top: 0px;
   padding-top: 0px;
   font-size: 3em;
-  text-shadow: 2px 2px #000000;
+  text-shadow: -2px 2px #000000;
 }
 
 .section {
@@ -40,7 +40,7 @@ body {
   width: auto;
   margin: 0 0 150px 0;
   padding: 1px 5% 40px 100px;
-  box-shadow: 20px 20px 30px 10px #02020B;
+  box-shadow: -20px 20px 30px 10px #02020B;
 }
 
 #content {
