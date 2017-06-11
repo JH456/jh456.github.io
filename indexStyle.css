@@ -1,7 +1,9 @@
 body {
+  background: #551100;
   background-image: url("./cabling.jpg");
   background-attachment: fixed;
-  background-position: 0% -300px;
+  background-position: 0% -400px;
+  background-repeat: no-repeat;
   font-family: Raleway;
 }
 
@@ -40,7 +42,7 @@ body {
   width: auto;
   margin: 0 0 150px 0;
   padding: 1px 5% 40px 100px;
-  box-shadow: -20px 20px 30px 10px #02020B;
+  /*box-shadow: -20px 20px 30px 10px #02020B;*/
 }
 
 #content {
