@@ -125,9 +125,10 @@ a:active .fa-6 {
   border-radius: 100px;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
-  background: url(./websitePic.jpg) no-repeat;
-  background-size: 100%;
-  background-position: 0% 40%;
+  background: url(./shitty_wizard.jpg) no-repeat;
+  -webkit-transform: rotate(100deg);
+  background-size: 300%;
+  background-position: 20% 40%;
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
