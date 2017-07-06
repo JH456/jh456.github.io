@@ -123,8 +123,8 @@ a:active .fa-6 {
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   background: url(./shitty_wizard.jpg) no-repeat;
-  -webkit-transform: rotate(100deg);
-  background-size: 300%;
+  -webkit-transform: rotate(10deg);
+  background-size: 100%;
   background-position: 20% 40%;
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
