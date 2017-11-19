@@ -1,15 +1,38 @@
-body {
-  background: #551100;
+.header {
   background-image: url("./cabling.jpg");
   background-attachment: fixed;
-  background-position: 0% -400px;
   background-repeat: no-repeat;
+  min-height: 100vh;
+  color: #FFFFFF;
+}
+
+.w3-top {
+  background-color: #191923;
+  color: #992200;
+}
+
+.w3-bar-item:hover {
+  background-color: #14141c;
+}
+
+.header h1 {
+  font-family: "ubuntu mono";
+  font-size: 4em;
+}
+
+.header h2 {
+  font-family: "ubuntu mono";
+  font-size: 2em;
+}
+
+body {
   font-family: Raleway;
+  background-color: #191923;
 }
 
 .jh456 {
-  height: 180px;
-  width: 180px;
+  height: 360px;
+  width: 360px;
 }
 
 #banner {
@@ -20,9 +43,7 @@ body {
   position: absolute;
   text-align: center;
   margin: 0;
-  color: #FFFFFF;
   padding: 20px;
-  font-family: "ubuntu mono";
 }
 
 #banner h1 {
@@ -45,17 +66,11 @@ body {
   /*box-shadow: -20px 20px 30px 10px #02020B;*/
 }
 
-#content {
-  position: absolute;
-  top: 480px;
-  height: auto;
+.w3-content {
   color: #DDDDFF;
-  left: 0px;
-  background-opacity: 0;
-  right: 0px;
 }
 
-#content h1 {
+.w3-content h1 {
   text-align: left;
   margin: 25px 0px 25px 0px;
   padding: 0px;
@@ -65,7 +80,7 @@ body {
   color: #AA2200;
 }
 
-#content h2 {
+.w3-content h2 {
   text-align: left;
   margin-left: 0px;
   padding: 0px;
@@ -75,11 +90,11 @@ body {
   color: #AA2200;
 }
 
-#content p {
+.w3-content p {
   line-height: 1.5em;
 }
 
-#content .left {
+.w3-content .left {
   margin-right: 400px;
   display: inline-block;
   float: left;
@@ -87,7 +102,7 @@ body {
   margin: 0 25px 0 0;
 }
 
-#content .right {
+.w3-content .right {
   display: table-cell;
   display: inline-block;
   float: right;
@@ -95,7 +110,7 @@ body {
   margin: 0 0 0 25px;
 }
 
-#content img {
+.w3-content img {
   width: 180px;
 }
 
