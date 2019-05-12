@@ -23,3 +23,5 @@ Some of my interests/hobbies include:
 * Lockpicking,
 * Salt posting on Piazza dot com,
 * Memes
+
+Feel free to snag a copy of my resumé [here](/assets/jamesHarrisResume.pdf).
