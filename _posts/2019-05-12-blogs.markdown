@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Welcome to the v̶̴̡́ó͘͜i̵̧̕͢d͘҉͞"
+date:   2019-05-12 11:40:33 -0400
+categories: jekyll update
+---
+
+![Welcome to the Void](https://i.redd.it/ziwn5vz7lw201.jpg)
+
+Oh neat, I can make blog posts now. I'll make posts sometimes about things. They'll probably have code in them that
+looks like this:
+
+```c
+int main(void) {
+    printf("bob");
+}
+```
+
+I feel so empowered.
+
+Love,
+Jim
