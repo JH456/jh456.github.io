@@ -13,6 +13,7 @@ looks like this:
 ```c
 int main(void) {
     printf("bob");
+    return 0;
 }
 ```
 
