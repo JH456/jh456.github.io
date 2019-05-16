@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to the v̶̴̡́ó͘͜i̵̧̕͢d͘҉͞"
 date:   2019-05-12 11:40:33 -0400
-categories: jekyll update
+categories: blog
 ---
 
 ![Welcome to the Void](https://i.redd.it/ziwn5vz7lw201.jpg)
