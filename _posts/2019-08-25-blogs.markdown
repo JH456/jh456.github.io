@@ -1,0 +1,76 @@
+---
+layout: post
+title:  "Linux Capabilities"
+date:   2019-08-25 1:50:00 -0400
+categories: blog
+---
+
+![Hello](https://preview.redd.it/m7jx01zrx4l21.png?width=960&crop=smart&auto=webp&s=a3c3c8320ea2154d38d718b56a35ecb72c1b3d53)
+
+## Intro
+
+Over the summer I got to work with some of the features built in to the Linux kernel, so I am going to make a few
+short blog posts about some of the things I got to learn about, and hopefully these can serve as a good jumping-off
+point for others who are interested. The first of these posts will be about **capabilities**.
+
+## Capabilities: What and Why?
+
+Essentially, capabilities are just a mechanism for breaking up the privileges held by the root user. The point of
+capabilities is to allow processes to run with **least-privilege**. That is to say, rather than a process needing to
+run as a root user and have free reign over everything on the machine, the process can instead be given more granular
+capabilities so that it has just the right privileges to do only what it needs to do. This helps to reduce the blast
+radius in the event that the process becomes compromised in some way; since there is less it is capable of doing, there
+is less that can go wrong.
+
+A full list of the capabilities and what they allow a process to do can be viewed through the man page if you just
+type `man capabilities`. You may not want to punch that straight into a web browser though, since I've found that
+typing `man x` into a web browser can sometimes produce unexpected results.
+
+For example, `CAP_CHOWN` allows processes to, "make arbitrary changes to file UIDs and GIDs."
+
+## Capability Sets
+
+Capabilities are granted to a particular process/thread, and processes have several different sets of capabilities.
+Paraphrased from the man page:
+
+* Effective (e): The actual set of capabilities that the kernel looks at when actions are performed.
+* Inheritable (i): The set of capabilities that is preserved across an execve **for a process running as root**
+* Permitted (p): The set of capabilities that a thread may add to its effective set.
+* Ambient: The set of capabilities that is preserved across an execve **for a process running as a non-root user**
+
+Ambient capabilities are often particularly helpful since they allow you to run a process as a non-root user, and then
+spawn additional worker threads with the same set of capabilities. This was not possible with the E, I, and P sets,
+which is why ambient capabilities are a relatively new feature added by
+[this commit](https://github.com/torvalds/linux/commit/58319057b7847667f0c9585b9de0e8932b0fdb08) in 2015. As a result
+though, older kernels (older than 4.3) will not have this functionality.
+
+## Setting File Capabilities
+
+Capabilities can be added to files such that when the file is executed, it is run with those capabilities regardless
+of the user who runs them. Therefore, having capabilities in the permitted and effective sets for a file allows that
+executable to run with elevated privileges even as a non-root user.
+
+Capabilities can be added for a file using `setcap`. Here is a common line that wireshark uses to allow non-root
+users to collect packets. As you can see, wireshark needs the `CAP_NET_RAW` and `CAP_NET_ADMIN` capabilities to do
+its work:
+
+```bash
+sudo setcap 'CAP_NET_RAW+eip CAP_NET_ADMIN+eip' /usr/bin/dumpcap
+```
+
+## Setting Ambient Capabilities
+
+If you took a look at the man page, you might notice that you cannot actually set ambient capabilities on a file. To
+do this, it must be done at runtime.
+
+There is a sample program included in
+[that commit](https://github.com/torvalds/linux/commit/58319057b7847667f0c9585b9de0e8932b0fdb08) that I linked to
+earlier which gives a good example on how to do this.
+
+## References and Further Reading
+* [Man page for Capabilities](http://man7.org/linux/man-pages/man7/capabilities.7.html)
+* [Commit Adding Ambient Capabilities to the Linux Kernel](https://github.com/torvalds/linux/commit/58319057b7847667f0c9585b9de0e8932b0fdb08)
+* [More Detailed Writeup on Capabilities that Helped me](https://linux-audit.com/linux-capabilities-101/)
+
+Love,
+Jim
